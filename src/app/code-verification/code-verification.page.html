@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Code Verification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="11">
+      <p class="font-16 bold mb-0">Please enter the 4-digit code sent to you at 9770 1479</p>
+      <div class="verifycodeCont">
+        <div class="inputCont">
+          <ion-item class="inputField" lines="none">
+            <ion-input type="number" value="0"></ion-input>
+          </ion-item>
+        </div>
+        <div class="inputCont">
+          <ion-item class="inputField" lines="none">
+            <ion-input type="number"></ion-input>
+          </ion-item>
+        </div>
+        <div class="inputCont">
+          <ion-item class="inputField" lines="none">
+            <ion-input type="number"></ion-input>
+          </ion-item>
+        </div>
+        <div class="inputCont">
+          <ion-item class="inputField" lines="none">
+            <ion-input type="number"></ion-input>
+          </ion-item>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <div class="btnCont">
+          <p class="despCont">Resend code in 0:14</p>
+          <ion-button routerLink="/home" color="primary" class="roundedBtn"><ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

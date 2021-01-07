@@ -1,0 +1,91 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Confirm Location</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="11">
+      <ion-item lines="none" class="inputCont">
+        <ion-datetime displayFormat="DD MMM hh:mm A" placeholder="Tue, 24 sep at PM-4:OO PM"></ion-datetime>
+      </ion-item>
+      <div class="locationsCont">
+        <div class="pinCont">
+          <img src="/assets/imgs/Route.svg">
+        </div>
+        <div class="locationfields">
+          <ion-item lines="none" class="inputCont">
+            <ion-input type="text" clearInput placeholder="51 Sharon St"></ion-input>
+          </ion-item>
+          <ion-item lines="none" class="inputCont">
+            <ion-input type="text" clearInput placeholder="where to?"></ion-input>
+            <div class="addBtnCont" slot="end">
+              <ion-icon name="add"></ion-icon>
+            </div>
+          </ion-item>
+        </div>
+      </div>
+      <ion-item class="savedLocation" lines="full">
+        <ion-button color="primary" slot="start" class="ion-no-padding actBtn">
+          <ion-icon name="home"></ion-icon>
+        </ion-button>
+        <ion-label>
+          <p class="font-15 secondary">Add home</p>
+        </ion-label>
+      </ion-item>
+      <ion-item class="savedLocation" lines="full">
+        <ion-button color="primary" slot="start" class="ion-no-padding actBtn">
+          <ion-icon name="briefcase"></ion-icon>
+        </ion-button>
+        <ion-label>
+          <p class="font-15 secondary">Add work</p>
+        </ion-label>
+      </ion-item>
+      <ion-item class="savedLocation" lines="full">
+        <ion-button color="tertiary" slot="start" class="ion-no-padding actBtn">
+          <ion-icon name="star"></ion-icon>
+        </ion-button>
+        <ion-label>
+          <p class="font-15 secondary">Saved places</p>
+        </ion-label>
+      </ion-item>
+      <ion-item class="savedLocation" lines="full">
+        <ion-button color="tertiary" slot="start" class="ion-no-padding actBtn">
+          <ion-icon name="location"></ion-icon>
+        </ion-button>
+        <ion-label>
+          <p class="font-15 secondary">San Francisco International Airport (SFO)</p>
+          <p class="appTxt pt-1 gray">780 McDonnell Rd, San Francisco</p>
+        </ion-label>
+      </ion-item>
+      <ion-item class="savedLocation" lines="full">
+        <ion-button color="tertiary" slot="start" class="ion-no-padding actBtn">
+          <ion-icon name="location"></ion-icon>
+        </ion-button>
+        <ion-label>
+          <p class="font-15 secondary">San Francisco International Airport (SFO)</p>
+          <p class="appTxt gray pt-1">780 McDonnell Rd, San Francisco</p>
+        </ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <ion-button routerLink="/select-trip-type" color="primary" class="loginBtn" expand="block">Contiune</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

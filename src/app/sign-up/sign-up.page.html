@@ -1,0 +1,37 @@
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="11">
+      <div class="imgCont">
+        <img src="/assets/imgs/user1.png" class="userImg">
+        <p>Change</p>
+      </div>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Full Name</ion-label>
+        <ion-input type="email" placeholder="Jane Osborne"></ion-input>
+      </ion-item>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Mobile Number</ion-label>
+        <ion-input type="tel" placeholder="+1 551 210 2152"></ion-input>
+      </ion-item>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Email Address</ion-label>
+        <ion-input type="email" placeholder="janeosborne@gmail.com"></ion-input>
+      </ion-item>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input type="password" placeholder="********"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <ion-button routerLink="/phone-number" color="primary" class="loginBtn" expand="block">Sign up</ion-button>
+        <p routerLink="/login" class="bottomTxt">Already have an account? <span class="primary bold">SIGN IN</span></p>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

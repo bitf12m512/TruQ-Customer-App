@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Item List</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mapCont">
+    <img src="/assets/imgs/map2.png" class="mapImg">
+  </div>
+  <div class="topContainer">
+    <div class="loctionsCont">
+      <div class="pinIconCont">
+        <img src="/assets/imgs/pinIcon.svg">
+      </div>
+      <div class="loctCont">
+        <div class="loct">
+          <p class="font-15 bold secondary">Home</p>
+          <p class="font-12 gray">51 Sharon St</p>
+        </div>
+        <div class="hrLine"></div>
+        <div class="loct">
+          <p class="font-15 bold secondary">Little Park</p>
+          <p class="font-12 gray">85 W Broadway, NY</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btmContainer">
+    <div class="selectCard">
+      <ion-radio-group value="yes">
+        <ion-row>
+          <ion-col size="5" class="pl-0">
+            <ion-item mode="md" lines="none" class="inputCont radioCont">
+              <ion-label>YES</ion-label>
+              <ion-radio slot="start" value="yes"></ion-radio>
+            </ion-item>
+          </ion-col>
+          <ion-col size="5" class="pr-0">
+            <ion-item mode="md" lines="none" class="inputCont radioCont">
+              <ion-label>NO</ion-label>
+              <ion-radio slot="start" value="no"></ion-radio>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-radio-group>
+      <ion-item lines="none" class="inputCont">
+        <ion-select value="opt1">
+          <ion-select-option value="opt1">4 Helper Required</ion-select-option>
+          <ion-select-option value="opt2">6 Helper Required</ion-select-option>
+        </ion-select>
+        <ion-icon slot="end" class="downArrow" name="chevron-down"></ion-icon>
+      </ion-item>
+      <ion-button routerLink="/select-vehicle" color="primary" class="loginBtn mt-1"
+        expand="block">Contiune</ion-button>
+    </div>
+  </div>
+</ion-content>

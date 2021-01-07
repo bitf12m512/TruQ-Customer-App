@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Code Verification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="11">
+      <p class="font-16 bold mb-0">Enter your mobile number</p>
+      <ion-item lines="full" class="inputCont">
+        <div slot="start" class="selectCont">
+          <ion-icon color="medium" name="caret-down-outline"></ion-icon>
+          <ion-select value="opt1">
+            <ion-select-option value="opt1">+1</ion-select-option>
+            <ion-select-option value="opt2">+92</ion-select-option>
+          </ion-select>
+        </div>
+        <ion-input type="tel" value="123 456 7890"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <div class="btnCont">
+          <p class="despCont">By continuing you may receive an SMS for verification. Message and data rates may apply.</p>
+          <ion-button routerLink="/code-verification" color="primary" class="roundedBtn"><ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

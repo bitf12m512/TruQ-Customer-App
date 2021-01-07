@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Select Vehicle Type</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mapCont">
+    <img src="/assets/imgs/map2.png" class="mapImg">
+  </div>
+  <div class="topContainer">
+    <div class="loctionsCont">
+      <div class="pinIconCont">
+        <img src="/assets/imgs/pinIcon.svg">
+      </div>
+      <div class="loctCont">
+        <div class="loct">
+          <p class="font-15 bold secondary">Home</p>
+          <p class="font-12 gray">51 Sharon St</p>
+        </div>
+        <div class="hrLine"></div>
+        <div class="loct">
+          <p class="font-15 bold secondary">Little Park</p>
+          <p class="font-12 gray">85 W Broadway, NY</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btmContainer">
+    <div class="selectCard">
+      <ion-item lines="none" class="inputCont">
+        <img src="/assets/imgs/Car.svg" class="carIcon" slot="start">
+        <ion-select value="opt1">
+          <ion-select-option value="opt1">Mini Van ( Recommended)</ion-select-option>
+          <ion-select-option value="opt2">Small Van</ion-select-option>
+        </ion-select>
+        <ion-icon slot="end" class="downArrow" name="chevron-down"></ion-icon>
+      </ion-item>
+      <ion-button color="primary" class="loginBtn mt-1"
+        expand="block">Contiune</ion-button>
+    </div>
+  </div>
+</ion-content>

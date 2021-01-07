@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Item List</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mapCont">
+    <img src="/assets/imgs/map2.png" class="mapImg">
+  </div>
+  <div class="topContainer">
+    <div class="loctionsCont">
+      <div class="pinIconCont">
+        <img src="/assets/imgs/pinIcon.svg">
+      </div>
+      <div class="loctCont">
+        <div class="loct">
+          <p class="font-15 bold secondary">Home</p>
+          <p class="font-12 gray">51 Sharon St</p>
+        </div>
+        <div class="hrLine"></div>
+        <div class="loct">
+          <p class="font-15 bold secondary">Little Park</p>
+          <p class="font-12 gray">85 W Broadway, NY</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btmContainer">
+    <div class="selectCard">
+      <ion-item lines="none" class="inputCont">
+        <ion-input type="text" placeholder="Shoes Cartons"></ion-input>
+        <div class="addBtnCont" slot="end">
+          <ion-icon name="add"></ion-icon>
+        </div>
+      </ion-item>
+      <ion-row>
+        <ion-col size="4" class="pl-0" style="padding-right: 5px;">
+          <p class="inputTitle">Weight</p>
+          <ion-item lines="none" class="inputCont detailItem">
+            <ion-input type="text" placeholder="400 KG"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="4">
+          <p class="inputTitle">Value</p>
+          <ion-item lines="none" class="inputCont detailItem">
+            <ion-input type="text" placeholder="40K"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="4" class="pr-0" style="padding-left: 5px;">
+          <p class="inputTitle">Dimesions</p>
+          <ion-item lines="none" class="inputCont detailItem">
+            <ion-input type="text" placeholder="20*25mm"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-button routerLink="/helper-confirmation" color="primary" class="loginBtn" style="margin-top: 10px;" expand="block">Contiune</ion-button>
+    </div>
+  </div>
+</ion-content>

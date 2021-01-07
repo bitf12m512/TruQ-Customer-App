@@ -1,0 +1,89 @@
+ion-content {
+    --padding-top: 1.5em;
+
+    .inputCont {
+        --padding-start: 20px;
+        --padding-end: 20px;
+        --inner-padding-end: 0px;
+        --background: #F5F5F5;
+        --min-height: 48px;
+        border-radius: 20px;
+        --border-radius: 20px;
+
+        ion-input {
+            --padding-end: 0px;
+            font-size: 15px;
+            --placeholder-opacity: 0.8;
+            --color: var(--ion-color-secondary);
+        }
+
+        ion-datetime {
+            font-size: 15px;
+            --color: var(--ion-color-secondary);
+            --padding-end: 0px;
+            width: 100%;
+        }
+    }
+
+    .locationsCont {
+        display: flex;
+        align-items: center;
+        margin: 15px 0px;
+
+        .pinCont {
+            margin-right: 20px;
+            align-self: center;
+        }
+
+        .locationfields {
+            width: 90%;
+
+            .inputCont:last-child {
+                margin-top: 15px;
+            }
+
+            .inputCont {
+                .addBtnCont {
+                    margin: 0px 0px 0px 5px;
+                    height: 20px;
+                    width: 40px;
+                    border-left: 1px solid #E4E9F2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .savedLocation {
+        --padding-start: 0px;
+        --padding-end: 0px;
+        --inner-padding-end: 0px;
+        --min-height: 75px;
+        --border-color: #DEE2E5;
+
+        .actBtn {
+            margin: 0px 20px 0px 0px;
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            --border-radius: 50%;
+
+            ion-icon {
+                font-size: 20px;
+            }
+        }
+
+        ion-label {
+            margin: 0px;
+
+            p {
+                margin: 0px;
+                line-height: normal;
+            }
+        }
+    }
+
+}

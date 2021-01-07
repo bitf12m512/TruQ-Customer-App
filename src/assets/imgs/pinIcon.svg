@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13.124" height="71.032" viewBox="0 0 13.124 71.032">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_61" data-name="Path 61" d="M3371.771,211.067S3366,203.532,3366,200.239s1.91-5.963,5.772-5.963,5.772,2.67,5.772,5.963S3371.771,211.067,3371.771,211.067Zm0-7.346a3.673,3.673,0,0,0,3.673-3.673h0a3.672,3.672,0,1,0-3.673,3.673Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_387" data-name="Group 387" transform="translate(-3364.938 -140.035)">
+    <g id="Divider">
+      <path id="Color" d="M3372,152.1v44h-1v-44Z" fill="#dee2e5"/>
+    </g>
+    <g id="Icon_2" data-name="Icon 2">
+      <g id="Group_355" data-name="Group 355">
+        <g id="Group_354" data-name="Group 354" clip-path="url(#clip-path)">
+          <g id="Icon_Left" data-name="Icon Left">
+            <path id="Path_62" data-name="Path 62" d="M3363.375,190.971h16.791v22.038h-16.791Z" fill="#323643"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path id="_Color-2" data-name=" Color-2" d="M3371.5,153.159a6.562,6.562,0,1,1,6.562-6.562A6.562,6.562,0,0,1,3371.5,153.159Zm0-11.375a4.813,4.813,0,1,0,4.812,4.814h0A4.819,4.819,0,0,0,3371.5,141.784Z" fill="#323643"/>
+  </g>
+</svg>

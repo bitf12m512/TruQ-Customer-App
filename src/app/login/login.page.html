@@ -1,0 +1,26 @@
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="11">
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Email Address</ion-label>
+        <ion-input type="email" placeholder="brandsbyab@gmail.com"></ion-input>
+      </ion-item>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input type="password" placeholder="********"></ion-input>
+      </ion-item>
+      <p class="appTxt bold mt-2 ion-text-center">Forgot password?</p>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <ion-button routerLink="/home" routerDirection="root" color="primary" class="loginBtn" expand="block">Sign in</ion-button>
+        <p routerLink="/sign-up" class="bottomTxt">Don’t have an account? <span class="primary bold">SIGN UP</span></p>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

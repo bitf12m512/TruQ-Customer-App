@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <div slot="start" class="txtCont">
+      <p class="font-12">Good afternoon</p>
+      <h4 class="bold primary">Jacob</h4>
+    </div>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="11">
+      <ion-item routerLink="/confirm-location" detail="false" lines="none" class="searchBarCont">
+        <ion-icon slot="start" class="locIcon" name="location"></ion-icon>
+        <ion-label>Where to Deliver?</ion-label>
+        <ion-icon slot="end" class="detailIcon" name="chevron-forward"></ion-icon>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>
