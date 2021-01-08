@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Settings</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="11">
+      <ion-item class="itemCont" lines="none">
+        <ion-icon color="secondary" class="itemIcon" slot="start" name="notifications-outline"></ion-icon>
+        <ion-label>
+          <p class="font-15">Notifications</p>
+          <p class="appTxt">Currently on</p>
+        </ion-label>
+        <ion-toggle checked slot="end" mode="md"></ion-toggle>
+      </ion-item>
+      <ion-item class="itemCont" lines="none">
+        <img src="/assets/imgs/routeIcon.svg" slot="start" class="itemIcon">
+        <ion-label>
+          <p class="font-15">Distance</p>
+          <p class="appTxt">Kilometers, Tap to change</p>
+        </ion-label>
+      </ion-item>
+      <ion-item class="itemCont" lines="none">
+        <ion-icon color="tertiary" class="itemIcon" slot="start" name="star"></ion-icon>
+        <ion-label>
+          <p class="font-15">Enjoying the app?</p>
+          <p class="appTxt">Rate us</p>
+        </ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>

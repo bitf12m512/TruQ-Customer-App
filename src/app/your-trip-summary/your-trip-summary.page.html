@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Trip Summary</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="11">
+      <div class="detailCont">
+        <img src="/assets/imgs/cardBorder.png" class="borderImg">
+        <div class="loctCont">
+          <div class="pinIconCont">
+            <img src="/assets/imgs/pinIcon2.svg">
+          </div>
+          <div class="addressCont">
+            <p class="loct">199 Brown Estate Apt. 866</p>
+            <p class="loct">856 Spinka Inlet Apt. 576</p>
+          </div>
+        </div>
+        <div class="dateCont">
+          <p class="font-15">Tue, 24 sep at PM-4:OO PM</p>
+        </div>
+        <div class="dateCont">
+          <img src="/assets/imgs/Car.svg" class="carImg">
+          <p class="font-15">Mini Van</p>
+        </div>
+        <div class="dateCont">
+          <p class="font-15">Express Trip</p>
+        </div>
+        <div class="fareCont">
+          <p class="appTxt">Estimated Time</p>
+          <p class="font-15 bold">3 Hours</p>
+        </div>
+        <div class="fareCont">
+          <p class="appTxt">Estimated Qoute</p>
+          <p class="font-15 bold">$ 351.21</p>
+        </div>
+        <ion-row class="mt-1">
+          <ion-col size="8" class="pl-0" style="padding-right: 8px;">
+            <ion-item class="promoInput" lines="none">
+              <ion-icon name="gift-outline" slot="start" class="giftIcon"></ion-icon>
+              <ion-input type="text" placeholder="Enter Promo Code"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col size="4" class="pr-0">
+            <ion-button color="primary" expand="block" class="applyBtn">Apply</ion-button>
+          </ion-col>
+        </ion-row>
+      </div>
+      <div class="scheduletrip">
+        <div class="iconCont">
+          <ion-icon name="calendar-clear-outline"></ion-icon>
+          <p>Schedule</p>
+        </div>
+        <div class="iconCont">
+          <img src="/assets/imgs/masterCard.svg">
+          <p>Change</p>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <ion-button routerLink="/home" routerDirection="back" fill="outline" color="primary" class="loginBtn"
+          expand="block">Cancel</ion-button>
+        <ion-button routerLink="/trip-success" color="primary" class="loginBtn mt-1" expand="block">Book Trip
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

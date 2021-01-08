@@ -1,0 +1,106 @@
+ion-header {
+    .tabBtnsCont {
+        --padding-top: 10px !important;
+        --padding-bottom: 0px !important;
+
+        ion-segment {
+            --background: transparent;
+            width: 97%;
+            margin: 0px auto;
+            border: 1px solid var(--ion-color-primary);
+            border-radius: 10px;
+
+            .hrLine {
+                height: 75%;
+                width: 1px;
+                background-color: #C2C7D3;
+                align-self: center;
+            }
+
+            ion-segment-button {
+                --border-color: transparent;
+                font-size: 15px;
+                font-weight: bold;
+                --indicator-box-shadow: transparent !important;
+                border-radius: 10px !important;
+                padding: 2px 0px;
+                margin: 0px;
+                --background: transparent;
+                --color: #C2C7D3;
+                --background-checked: transparent;
+                --color-checked: var(--ion-color-primary);
+                height: 48px;
+                --indicator-color: transparent !important;
+            }
+        }
+    }
+}
+
+ion-content {
+    --padding-bottom: 20px;
+
+    .tripCont {
+        box-shadow: 3px 10px 36px 0px rgba(169, 162, 161, 0.13);
+        border-radius: 16px;
+        padding: 16px 18px;
+        position: relative;
+        margin-top: 20px;
+
+        .loctCont {
+            border: 1px solid #B8C0C3;
+            border-radius: 8px;
+            display: flex;
+            padding: 15px 20px;
+
+            .pinIconCont {
+                margin-right: 18px;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .addressCont {
+                width: 92%;
+
+                .loct {
+                    margin: 0px;
+                    font-size: 14px;
+                    color: var(--ion-color-secondary);
+                }
+
+                .loct:last-child {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        .dateCont {
+            border: 1px solid #B8C0C3;
+            border-radius: 8px;
+            height: 50px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            padding: 0px 20px;
+
+            p {
+                margin: 0px;
+            }
+
+            .carImg {
+                margin-right: 12px;
+            }
+        }
+
+        .loginBtn {
+            margin: 15px 0px 0px 0px;
+        }
+
+        .tripID {
+            font-size: 14px;
+            text-align: center;
+            margin: 15px 0px 10px 0px;
+        }
+    }
+}

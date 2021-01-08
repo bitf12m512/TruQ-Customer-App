@@ -1,0 +1,36 @@
+ion-content {
+    --padding-top: 0.5em;
+
+    .itemCont {
+        --padding-start: 0px;
+        --padding-end: 0px;
+        --inner-padding-end: 0px;
+        margin-top: 25px;
+        --min-height: 45px;
+
+        ion-label {
+            margin: 0px;
+            p
+            {
+                margin: 0px;
+                line-height: normal;
+                color: var(--ion-color-secondary);
+            }
+            p:last-child
+            {
+                padding-top: 6px;
+            }
+        }
+
+        .itemIcon
+        {
+            font-size: 24px;
+            margin: 0px 15px 0px 0px;
+        }
+
+        ion-toggle {
+            --background-checked: #DEE2E5;
+            height: 17px;
+        }
+    }
+}

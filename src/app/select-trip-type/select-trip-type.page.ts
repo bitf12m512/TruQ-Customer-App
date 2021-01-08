@@ -16,7 +16,7 @@ export class SelectTripTypePage implements OnInit {
       this.router.navigate(['/item-list']);
     }
     else {
-      this.router.navigate(['/sign-up']);
+      this.router.navigate(['/shared-trips']);
     }
   }
 }

@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Your Trips</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-toolbar class="tabBtnsCont" mode="ios">
+    <ion-segment mode="ios" [(ngModel)]="activeTab">
+      <ion-segment-button mode="ios" value="upcoming">Upcoming</ion-segment-button>
+      <div class="hrLine"></div>
+      <ion-segment-button mode="ios" value="previous">Previous</ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row [(ngSwitch)]="activeTab" class="ion-justify-content-center">
+    <ion-col size="11">
+      <div *ngSwitchCase="'upcoming'">
+        <div class="tripCont">
+          <div class="loctCont">
+            <div class="pinIconCont">
+              <img src="/assets/imgs/pinIcon2.svg">
+            </div>
+            <div class="addressCont">
+              <p class="loct">199 Brown Estate Apt. 866</p>
+              <p class="loct">856 Spinka Inlet Apt. 576</p>
+            </div>
+          </div>
+          <div class="dateCont">
+            <p class="font-15">Tue, 24 sep at PM-4:OO PM</p>
+          </div>
+          <div class="dateCont">
+            <img src="/assets/imgs/Car.svg" class="carImg">
+            <p class="font-15">Mini Van</p>
+          </div>
+          <ion-button color="primary" fill="outline" class="loginBtn" expand="block">Cancel</ion-button>
+          <ion-button color="primary" class="loginBtn" expand="block">Qoutes</ion-button>
+          <p class="tripID">Trip ID: 5241D541A</p>
+        </div>
+        <div class="tripCont">
+          <div class="loctCont">
+            <div class="pinIconCont">
+              <img src="/assets/imgs/pinIcon2.svg">
+            </div>
+            <div class="addressCont">
+              <p class="loct">199 Brown Estate Apt. 866</p>
+              <p class="loct">856 Spinka Inlet Apt. 576</p>
+            </div>
+          </div>
+          <div class="dateCont">
+            <p class="font-15">Tue, 24 sep at PM-4:OO PM</p>
+          </div>
+          <div class="dateCont">
+            <img src="/assets/imgs/Car.svg" class="carImg">
+            <p class="font-15">Mini Van</p>
+          </div>
+          <ion-button color="primary" fill="outline" class="loginBtn" expand="block">Cancel</ion-button>
+          <ion-button color="primary" class="loginBtn" expand="block">Qoutes</ion-button>
+          <p class="tripID">Trip ID: 5241D541A</p>
+        </div>
+      </div>
+      <div *ngSwitchCase="'previous'">
+        <div class="tripCont">
+          <div class="loctCont">
+            <div class="pinIconCont">
+              <img src="/assets/imgs/pinIcon2.svg">
+            </div>
+            <div class="addressCont">
+              <p class="loct">199 Brown Estate Apt. 866</p>
+              <p class="loct">856 Spinka Inlet Apt. 576</p>
+            </div>
+          </div>
+          <div class="dateCont">
+            <p class="font-15">Tue, 24 sep at PM-4:OO PM</p>
+          </div>
+          <ion-button routerLink="/trip-detail" color="primary" fill="outline" class="loginBtn" expand="block">Trip Details</ion-button>
+          <ion-button routerLink="/rating" color="primary" class="loginBtn" expand="block">Rate Driver</ion-button>
+        </div>
+        <div class="tripCont">
+          <div class="loctCont">
+            <div class="pinIconCont">
+              <img src="/assets/imgs/pinIcon2.svg">
+            </div>
+            <div class="addressCont">
+              <p class="loct">199 Brown Estate Apt. 866</p>
+              <p class="loct">856 Spinka Inlet Apt. 576</p>
+            </div>
+          </div>
+          <div class="dateCont">
+            <p class="font-15">Tue, 24 sep at PM-4:OO PM</p>
+          </div>
+          <ion-button routerLink="/trip-detail" color="primary" fill="outline" class="loginBtn" expand="block">Trip Details</ion-button>
+          <ion-button routerLink="/rating" color="primary" class="loginBtn" expand="block">Rate Driver</ion-button>
+        </div>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>

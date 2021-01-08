@@ -1,0 +1,130 @@
+ion-content {
+    --padding-top: 1.5em;
+
+    .detailCont {
+        box-shadow: 3px 10px 36px 0px rgba(169, 162, 161, 0.13);
+        border-radius: 8px 8px 0px 0px;
+        padding: 16px 18px;
+        position: relative;
+
+        .borderImg {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: 223;
+        }
+
+        .loctCont {
+            border: 1px solid #B8C0C3;
+            border-radius: 8px;
+            display: flex;
+            padding: 15px 20px;
+
+            .pinIconCont {
+                margin-right: 18px;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .addressCont {
+                width: 92%;
+
+                .loct {
+                    margin: 0px;
+                    font-size: 14px;
+                    color: var(--ion-color-secondary);
+                }
+
+                .loct:last-child {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        .dateCont {
+            border: 1px solid #B8C0C3;
+            border-radius: 8px;
+            height: 50px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            padding: 0px 20px;
+
+            p {
+                margin: 0px;
+            }
+
+            .carImg {
+                margin-right: 12px;
+            }
+        }
+
+        .fareCont {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #B8C0C3;
+
+            p {
+                margin: 0px;
+            }
+        }
+
+        .promoInput {
+            --min-height: 45px;
+            --padding-start: 10px;
+            --padding-end: 10px;
+            --inner-padding-end: 0px;
+            border: 1px solid #B8C0C3;
+            border-radius: 7px;
+
+            .giftIcon {
+                margin: 0px 10px 0px 0px;
+                color: var(--ion-color-secondary);
+                font-size: 20px;
+            }
+
+            ion-input {
+                font-size: 13px;
+                --color: var(--ion-color-secondary);
+                --padding-end: 0px;
+            }
+        }
+
+        .applyBtn {
+            height: 45px;
+            margin: 0px;
+            font-size: 14px;
+            --border-radius: 7px;
+        }
+    }
+    .scheduletrip
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 15px;
+        .iconCont
+        {
+            display: flex;
+            align-items: center;
+            ion-icon
+            {
+                font-size: 24px;
+            }
+            ion-icon,img
+            {
+                margin-right: 10px;
+            }
+            p
+            {
+                margin: 0px;
+            }
+        }
+    }
+}

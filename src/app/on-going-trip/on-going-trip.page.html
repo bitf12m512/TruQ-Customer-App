@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>On Going Trip</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mapCont">
+    <img src="/assets/imgs/map2.png" class="mapImg">
+  </div>
+  <div class="topContainer">
+    <div class="loctionsCont">
+      <div class="pinIconCont">
+        <img src="/assets/imgs/pinIcon.svg">
+      </div>
+      <div class="loctCont">
+        <div class="loct">
+          <p class="font-15 bold secondary">Home</p>
+          <p class="font-12 gray">51 Sharon St</p>
+        </div>
+        <div class="hrLine"></div>
+        <div class="loct">
+          <p class="font-15 bold secondary">Little Park</p>
+          <p class="font-12 gray">85 W Broadway, NY</p>
+        </div>
+      </div>
+    </div>
+    <div class="distCont">
+      <ion-row>
+        <ion-col size="7" class="p-0">
+          <p class="appTxt gray">Current Location</p>
+          <p class="font-14 pt-1 secondary">856 Spinka Apt. 576</p>
+        </ion-col>
+        <ion-col size="5" class="pr-0 py-0">
+          <p class="appTxt gray">Distance Left</p>
+          <p class="font-14 pt-1 secondary">13 km</p>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  
+  <div class="btmContainer">
+    <div class="selectCard">
+      <div class="driverInfo">
+        <div class="nameCont">
+          <img src="/assets/imgs/user2.png" class="userImg">
+          <div class="txtCont">
+            <p class="font-15 bold">Hannah Baker</p>
+            <div class="rating">
+              <ion-icon name="star"></ion-icon>
+              <p class="appTxt">4.9</p>
+            </div>
+          </div>
+        </div>
+        <ion-button color="secondary" fill="clear" class="callBtn ion-no-padding">
+          <ion-icon name="call"></ion-icon>
+        </ion-button>
+      </div>
+      <ion-button color="primary" fill="outline" class="loginBtn mt-1" expand="block">Cancel Trip</ion-button>
+      <ion-button color="primary" class="loginBtn mt-1" expand="block">Share Trip Details</ion-button>
+    </div>
+  </div>
+</ion-content>

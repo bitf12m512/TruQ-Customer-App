@@ -1,0 +1,69 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ratings</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mapCont">
+    <img src="/assets/imgs/map2.png" class="mapImg">
+  </div>
+  <div class="btmContainer">
+    <ion-row class="ion-justify-content-center ion-padding-vertical">
+      <ion-col size="11">
+        <div class="mainCont">
+          <div class="driverCont">
+            <div class="driverInfo">
+              <div class="nameCont">
+                <img src="/assets/imgs/user2.png" class="userImg">
+                <div class="txtCont">
+                  <p class="font-15 bold">Hannah Baker</p>
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+                    <p class="appTxt">4.9</p>
+                  </div>
+                </div>
+              </div>
+              <ion-button color="secondary" fill="clear" class="callBtn ion-no-padding">
+                <ion-icon name="call"></ion-icon>
+              </ion-button>
+            </div>
+            <div class="fareCont">
+              <p class="font-14">Mini Cargo Van</p>
+              <p class="font-15 bold">$ 250.00</p>
+            </div>
+          </div>
+          <div class="driverRating">
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star-outline" color="warning"></ion-icon>
+          </div>
+          <ion-item lines="none" class="commentCont">
+            <ion-textarea rows="8" placeholder="write here..."></ion-textarea>
+          </ion-item>
+        </div>
+        <div class="appRatingCont">
+          <p class="font-16">Enjoying? Rate the Platform!</p>
+          <div class="appRating">
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star" color="warning"></ion-icon>
+            <ion-icon name="star-outline" color="warning"></ion-icon>
+          </div>
+          <ion-button routerLink="/your-trips" color="primary" class="loginBtn mt-2" expand="block">Rate!</ion-button>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>

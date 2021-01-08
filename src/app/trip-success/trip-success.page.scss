@@ -1,0 +1,21 @@
+ion-content {
+    .mainCont
+    {
+        height: 75vh;
+        display: grid;
+        align-items: center;
+    }
+    .detailCont {
+        box-shadow: 3px 10px 36px 0px rgba(169, 162, 161, 0.13);
+        border-radius: 8px;
+        min-height: 90vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1
+        {
+            color: #5EC61A;
+        }
+    }
+}

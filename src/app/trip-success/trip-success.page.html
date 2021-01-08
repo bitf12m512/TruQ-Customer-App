@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Success</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mainCont">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <div class="detailCont">
+          <div class="txt">
+            <img src="/assets/imgs/checkMark.svg">
+            <h1>Trip Successfully<br/>
+              Created!</h1>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <ion-button routerLink="/home" routerDirection="root" color="primary" class="loginBtn mb-1" expand="block">Continue
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

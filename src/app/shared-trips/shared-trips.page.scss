@@ -1,0 +1,67 @@
+ion-content {
+    --padding-bottom: 20px;
+
+    .tripCont {
+        box-shadow: 3px 10px 36px 0px rgba(169, 162, 161, 0.13);
+        border-radius: 16px;
+        padding: 16px 18px;
+        position: relative;
+        margin-top: 20px;
+        .loctCont {
+            border: 1px solid #B8C0C3;
+            border-radius: 8px;
+            display: flex;
+            padding: 15px 20px;
+
+            .pinIconCont {
+                margin-right: 18px;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            .addressCont {
+                width: 92%;
+
+                .loct {
+                    margin: 0px;
+                    font-size: 14px;
+                    color: var(--ion-color-secondary);
+                }
+
+                .loct:last-child {
+                    padding-top: 20px;
+                }
+            }
+        }
+
+        .dateCont {
+            border: 1px solid #B8C0C3;
+            border-radius: 8px;
+            height: 50px;
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            padding: 0px 20px;
+
+            p {
+                margin: 0px;
+            }
+
+            .carImg {
+                margin-right: 12px;
+            }
+        }
+
+        .loginBtn {
+            margin: 18px 0px 0px 0px;
+        }
+
+        .tripID {
+            font-size: 14px;
+            text-align: center;
+            margin: 15px 0px 10px 0px;
+        }
+    }
+}
