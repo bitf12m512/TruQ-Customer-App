@@ -1,3 +1,12 @@
+ion-header {
+    ion-toolbar {
+        ion-title {
+            text-transform: none !important;
+            padding-inline-start: 45px;
+            padding-inline-end: 45px;
+        }
+    }
+}
 ion-content {
     --padding-bottom: 0px;
 
@@ -71,8 +80,8 @@ ion-content {
             padding: 22px 18px;
 
             .inputCont {
-                --padding-start: 20px;
-                --padding-end: 15px;
+                --padding-start: 15px;
+                --padding-end: 10px;
                 --inner-padding-end: 0px;
                 --min-height: 50px;
                 border: 1px solid #B8C0C3;

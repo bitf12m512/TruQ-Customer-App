@@ -1,0 +1,45 @@
+ion-content {
+    --padding-top: 4em;
+
+    .inviteBtn {
+        width: 170px;
+        height: 40px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 5px;
+        --border-radius: 5px;
+        margin-top: 30px;
+    }
+}
+
+ion-footer {
+    ion-toolbar {
+        text-align: center;
+
+        .whatsappLink {
+            height: 48px;
+            width: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 1px 1px 12px 0px rgba(184, 182, 182, 0.418);
+
+            p {
+                margin: 0px;
+                font-size: 17px;
+                color: var(--ion-color-secondary);
+                white-space: normal;
+                word-break: break-word;
+                width: 57%;
+            }
+
+            ion-icon {
+                font-size: 22px;
+                margin-left: 12px;
+            }
+        }
+    }
+}

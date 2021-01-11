@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Profile</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="11">
+      <div class="imgCont">
+        <img src="/assets/imgs/user1.png" class="userImg">
+        <p>Change</p>
+      </div>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Full Name</ion-label>
+        <ion-input type="text" value="Jane Osborne"></ion-input>
+      </ion-item>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Mobile Number</ion-label>
+        <ion-input type="tel" value="+1 551 210 2152"></ion-input>
+      </ion-item>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Email Address</ion-label>
+        <ion-input type="email" value="janeosborne@gmail.com"></ion-input>
+      </ion-item>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input type="password" value="dffdfdfccvs"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <div routerLink="/login" class="bottomTxt">
+          <ion-icon color="secondary" name="log-out-outline"></ion-icon>
+          <p class="font-15 my-0">Sign out</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

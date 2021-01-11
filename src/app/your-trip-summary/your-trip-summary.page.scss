@@ -61,7 +61,33 @@ ion-content {
                 margin-right: 12px;
             }
         }
+        .inputCont {
+            --padding-start: 15px;
+            --padding-end: 10px;
+            --inner-padding-end: 0px;
+            --min-height: 50px;
+            border: 1px solid #B8C0C3;
+            border-radius: 6px;
+            --border-radius: 6px;
+            margin-top: 10px;
 
+            ion-select {
+                --color: var(--ion-color-secondary);
+                font-size: 15px;
+                width: 100%;
+                --padding-end: 0px;
+            }
+
+            ion-select::part(icon) {
+                display: none !important;
+            }
+
+            .downArrow {
+                color: var(--ion-color-secondary);
+                font-size: 24px;
+                margin: 0px;
+            }
+        }
         .fareCont {
             display: flex;
             align-items: center;

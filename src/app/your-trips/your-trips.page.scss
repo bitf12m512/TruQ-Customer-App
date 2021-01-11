@@ -92,7 +92,13 @@ ion-content {
                 margin-right: 12px;
             }
         }
-
+        .inviteTxt
+        {
+            font-size: 13px;
+            text-align: right;
+            margin: 12px 0px;
+            font-weight: bold;
+        }
         .loginBtn {
             margin: 15px 0px 0px 0px;
         }
@@ -101,6 +107,36 @@ ion-content {
             font-size: 14px;
             text-align: center;
             margin: 15px 0px 10px 0px;
+        }
+    }
+}
+
+.popupModal {
+
+    .innerDiv {
+        padding: 25px 20px;
+        color: var(--ion-color-secondary);
+        .inputCont
+        {
+            border: 1px solid #B8C0C3;
+            --border-radius: 8px;
+            border-radius: 8px;
+            --min-height:45px;
+            --padding-start:18px;
+            --padding-end:18px;
+            --inner-padding-end:0px;
+            margin-top: 15px;
+            ion-input
+            {
+                font-size: 14px;
+                --padding-end:0px;
+                color: var(--ion-color-secondary);
+            }
+        }
+        .loginBtn {
+            height: 50px;
+            margin-top: 28px;
+            text-transform: uppercase;
         }
     }
 }

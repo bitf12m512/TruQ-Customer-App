@@ -95,6 +95,34 @@ const routes: Routes = [
   {
     path: 'setting',
     loadChildren: () => import('./setting/setting.module').then( m => m.SettingPageModule)
+  },
+  {
+    path: 'payment-wallet',
+    loadChildren: () => import('./payment-wallet/payment-wallet.module').then( m => m.PaymentWalletPageModule)
+  },
+  {
+    path: 'add-card',
+    loadChildren: () => import('./add-card/add-card.module').then( m => m.AddCardPageModule)
+  },
+  {
+    path: 'transaction-history',
+    loadChildren: () => import('./transaction-history/transaction-history.module').then( m => m.TransactionHistoryPageModule)
+  },
+  {
+    path: 'referral',
+    loadChildren: () => import('./referral/referral.module').then( m => m.ReferralPageModule)
+  },
+  {
+    path: 'edit-profile',
+    loadChildren: () => import('./edit-profile/edit-profile.module').then( m => m.EditProfilePageModule)
+  },
+  {
+    path: 'about-us',
+    loadChildren: () => import('./about-us/about-us.module').then( m => m.AboutUsPageModule)
+  },
+  {
+    path: 'payment-confirmation',
+    loadChildren: () => import('./payment-confirmation/payment-confirmation.module').then( m => m.PaymentConfirmationPageModule)
   }
 ];
 

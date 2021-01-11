@@ -23,6 +23,13 @@ ion-content
             --padding-top: 10px;
             --padding-bottom: 10px;
         }
+        .eyeIcon
+        {
+            margin: 0px 0px 10px 8px;
+            font-size: 21px;
+            color: var(--ion-color-medium);
+            align-self: flex-end;
+        }
     }
 }
 

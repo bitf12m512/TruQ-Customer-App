@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button mode="ios" text=""></ion-back-button>
     </ion-buttons>
-    <ion-title>Item List</ion-title>
+    <ion-title>Do you need helper(s)?</ion-title>
     <ion-buttons slot="end">
       <ion-menu-button auto-hide="false">
         <img src="/assets/imgs/menuIcon.svg">
@@ -53,13 +53,22 @@
           </ion-col>
         </ion-row>
       </ion-radio-group>
-      <ion-item lines="none" class="inputCont">
-        <ion-select value="opt1">
-          <ion-select-option value="opt1">4 Helper Required</ion-select-option>
-          <ion-select-option value="opt2">6 Helper Required</ion-select-option>
-        </ion-select>
-        <ion-icon slot="end" class="downArrow" name="chevron-down"></ion-icon>
-      </ion-item>
+      <ion-row>
+        <ion-col size="8" class="pl-0">
+          <ion-item lines="none" class="inputCont">
+            <ion-select value="opt1">
+              <ion-select-option value="opt1">4 Helper Required</ion-select-option>
+              <ion-select-option value="opt2">6 Helper Required</ion-select-option>
+            </ion-select>
+            <ion-icon slot="end" class="downArrow" name="chevron-down"></ion-icon>
+          </ion-item>
+        </ion-col>
+        <ion-col size="4" class="pr-0">
+          <ion-item lines="none" class="inputCont">
+            <p class="font-17 bold my-0 secondary">$ 5</p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
       <ion-button routerLink="/select-vehicle" color="primary" class="loginBtn mt-1"
         expand="block">Contiune</ion-button>
     </div>

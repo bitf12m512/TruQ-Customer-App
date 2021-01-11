@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button mode="ios" text=""></ion-back-button>
     </ion-buttons>
-    <ion-title>Trip Summary</ion-title>
+    <ion-title>Booking Summary</ion-title>
     <ion-buttons slot="end">
       <ion-menu-button auto-hide="false">
         <img src="/assets/imgs/menuIcon.svg">
@@ -29,6 +29,13 @@
         <div class="dateCont">
           <p class="font-15">Tue, 24 sep at PM-4:OO PM</p>
         </div>
+        <ion-item lines="none" class="inputCont">
+          <ion-select value="opt1">
+            <ion-select-option value="opt1">4 Helper</ion-select-option>
+            <ion-select-option value="opt2">6 Helper</ion-select-option>
+          </ion-select>
+          <ion-icon slot="end" class="downArrow" name="chevron-down"></ion-icon>
+        </ion-item>
         <div class="dateCont">
           <img src="/assets/imgs/Car.svg" class="carImg">
           <p class="font-15">Mini Van</p>
@@ -37,12 +44,16 @@
           <p class="font-15">Express Trip</p>
         </div>
         <div class="fareCont">
-          <p class="appTxt">Estimated Time</p>
-          <p class="font-15 bold">3 Hours</p>
+          <p class="appTxt">Helper Cost</p>
+          <p class="font-15 bold">$ 5</p>
         </div>
         <div class="fareCont">
-          <p class="appTxt">Estimated Qoute</p>
-          <p class="font-15 bold">$ 351.21</p>
+          <p class="appTxt">Estimated Distance</p>
+          <p class="font-15 bold">30 Km</p>
+        </div>
+        <div class="fareCont">
+          <p class="appTxt">Estimated Price </p>
+          <p class="font-15 bold">$ 351.21 - $ 451.21</p>
         </div>
         <ion-row class="mt-1">
           <ion-col size="8" class="pl-0" style="padding-right: 8px;">
@@ -76,7 +87,7 @@
       <ion-col size="11">
         <ion-button routerLink="/home" routerDirection="back" fill="outline" color="primary" class="loginBtn"
           expand="block">Cancel</ion-button>
-        <ion-button routerLink="/trip-success" color="primary" class="loginBtn mt-1" expand="block">Book Trip
+        <ion-button routerLink="/payment-confirmation" color="primary" class="loginBtn mt-1" expand="block">Book Trip
         </ion-button>
       </ion-col>
     </ion-row>

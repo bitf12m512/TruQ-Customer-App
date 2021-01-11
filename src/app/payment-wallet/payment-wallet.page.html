@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Payment Wallet</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="11">
+      <ion-item lines="full" class="balanceCont">
+        <p slot="start">Wallet Balance</p>
+        <p slot="end" class="bold font-17">$ 351.21</p>
+      </ion-item>
+      <ion-button color="primary" class="loginBtn mt-2 mb-2" expand="block">Top up Wallet</ion-button>
+      <ion-radio-group value="opt1">
+        <div class="payMethodsCont">
+          <div class="methodCont">
+            <ion-item mode="md" lines="none" class="checkBox">
+              <ion-radio color="primary" value="opt1" slot="start"></ion-radio>
+              <div class="txtCont">
+                <img src="/assets/imgs/masterCard.svg" class="cardImg">
+                <p>530071*********4701</p>
+              </div>
+            </ion-item>
+          </div>
+          <div class="actionBtn">
+            <ion-button fill="clear" class="ion-no-padding" color="secondary">
+              <ion-icon name="close"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+        <div class="payMethodsCont">
+          <div class="methodCont">
+            <ion-item mode="md" lines="none" class="checkBox">
+              <ion-radio color="primary" value="opt2" slot="start"></ion-radio>
+              <div class="txtCont">
+                <img src="/assets/imgs/visa.jpg" class="cardImg">
+                <p>530071*********4701</p>
+              </div>
+            </ion-item>
+          </div>
+          <div class="actionBtn">
+            <ion-button fill="clear" class="ion-no-padding" color="secondary">
+              <ion-icon name="close"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+        <div class="payMethodsCont">
+          <div class="methodCont">
+            <ion-item mode="md" lines="none" class="checkBox">
+              <ion-radio color="primary" value="opt3" slot="start"></ion-radio>
+              <div class="txtCont">
+                <img src="/assets/imgs/masterCard.svg" class="cardImg">
+                <p>530071*********4701</p>
+              </div>
+            </ion-item>
+          </div>
+          <div class="actionBtn">
+            <ion-button fill="clear" class="ion-no-padding" color="secondary">
+              <ion-icon name="close"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+      </ion-radio-group>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <ion-button routerLink="/transaction-history" color="primary" fill="outline" class="loginBtn" expand="block">Transaction History</ion-button>
+        <ion-button routerLink="/add-card" color="primary" class="loginBtn mt-1" expand="block">Add New Card</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

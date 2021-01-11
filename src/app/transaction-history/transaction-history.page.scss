@@ -1,0 +1,50 @@
+ion-content
+{
+    --padding-top: 1em;
+    .balanceCont
+    {
+        --padding-start: 20px;
+        --padding-end: 20px;
+        --inner-padding-end: 0px;
+        --min-height: 45px;
+        p
+        {
+            margin: 0px;
+            font-size: 15px;
+            color: var(--ion-color-secondary);
+        }
+    }
+    .transactionCont
+    {
+        --padding-start: 20px;
+        --padding-end: 20px;
+        --inner-padding-end: 0px;
+        --min-height: 100px;
+        --background: white;
+        ion-label
+        {
+            margin: 0px;
+            p
+            {
+                margin: 0px;
+                line-height: normal;
+                color: var(--ion-color-secondary);
+            }
+            p:last-child
+            {
+                padding-top: 8px;
+            }
+        }
+        .amount
+        {
+            margin: 0px 0px 0px 10px;
+            font-size: 15px;
+            font-weight: bold;
+            color: var(--ion-color-secondary);
+        }
+        &.bgColored
+        {
+            --background: #F2F2F2;
+        }
+    }
+}

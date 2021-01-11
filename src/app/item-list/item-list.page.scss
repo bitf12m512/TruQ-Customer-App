@@ -1,5 +1,14 @@
-ion-content
-{
+ion-header {
+    ion-toolbar {
+        ion-title {
+            text-transform: none !important;
+            padding-inline-start: 45px;
+            padding-inline-end: 45px;
+        }
+    }
+}
+
+ion-content {
     --padding-bottom: 0px;
 
     .mapCont {
@@ -56,21 +65,21 @@ ion-content
         }
     }
 
-    .btmContainer
-    {
+    .btmContainer {
         position: absolute;
         bottom: 35px;
         left: 0px;
         width: 100%;
         z-index: 2255;
-        .selectCard
-        {
+
+        .selectCard {
             width: 90%;
             border-radius: 10px;
             margin: 0px auto;
             box-shadow: 1px 2px 20px 0px rgba(169, 162, 161, 0.418);
             background-color: white;
             padding: 22px 18px;
+
             .inputCont {
                 --padding-start: 20px;
                 --padding-end: 15px;
@@ -79,12 +88,23 @@ ion-content
                 border: 1px solid #B8C0C3;
                 border-radius: 6px;
                 --border-radius: 6px;
-        
+
                 ion-input {
                     --padding-end: 0px;
                     font-size: 14px;
                     --placeholder-opacity: 0.8;
                     --color: var(--ion-color-secondary);
+                }
+                .hrLine2
+                {
+                    height: 20px;
+                    width: 1px;
+                    background-color: #E4E9F2;
+                }
+                .itemInput
+                {
+                    min-width: 70%;
+                    --padding-end: 5px !important;
                 }
                 .addBtnCont {
                     margin: 0px 0px 0px 10px;
@@ -96,20 +116,20 @@ ion-content
                     justify-content: center;
                     text-align: center;
                 }
-                &.detailItem
-                {
+
+                &.detailItem {
                     --min-height: 42px;
                     --padding-start: 5px;
                     --padding-end: 5px;
-                    ion-input
-                    {
+
+                    ion-input {
                         text-align: center;
                         font-size: 13px;
                     }
                 }
             }
-            .inputTitle
-            {
+
+            .inputTitle {
                 font-size: 12px;
                 margin: 5px 0px;
                 color: var(--ion-color-medium);

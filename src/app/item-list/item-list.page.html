@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button mode="ios" text=""></ion-back-button>
     </ion-buttons>
-    <ion-title>Item List</ion-title>
+    <ion-title>What are you moving?</ion-title>
     <ion-buttons slot="end">
       <ion-menu-button auto-hide="false">
         <img src="/assets/imgs/menuIcon.svg">
@@ -38,7 +38,9 @@
   <div class="btmContainer">
     <div class="selectCard">
       <ion-item lines="none" class="inputCont">
-        <ion-input type="text" placeholder="Shoes Cartons"></ion-input>
+        <ion-input type="text" class="itemInput" placeholder="Shoes Cartons"></ion-input>
+        <div class="hrLine2"></div>
+        <ion-input type="number" class="ion-text-center" placeholder="Quantity"></ion-input>
         <div class="addBtnCont" slot="end">
           <ion-icon name="add"></ion-icon>
         </div>

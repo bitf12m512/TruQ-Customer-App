@@ -12,7 +12,7 @@ export class SelectTripTypePage implements OnInit {
   ngOnInit() {
   }
   selectedTrip() {
-    if (this.tripType == 'express') {
+    if (this.tripType == 'express' || this.tripType == 'houseMove') {
       this.router.navigate(['/item-list']);
     }
     else {

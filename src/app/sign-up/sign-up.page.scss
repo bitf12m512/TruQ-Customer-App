@@ -1,6 +1,6 @@
 ion-content
 {
-    --padding-top: 4em;
+    --padding-top: 2.7em;
     .imgCont
     {
         text-align: center;
@@ -38,6 +38,28 @@ ion-content
             --padding-end: 0px;
             --padding-top: 10px;
             --padding-bottom: 10px;
+        }
+        .eyeIcon
+        {
+            margin: 0px 0px 10px 8px;
+            font-size: 21px;
+            color: var(--ion-color-medium);
+            align-self: flex-end;
+        }
+    }
+    .checkBox {
+        margin-top: 15px;
+        --background: transparent;
+        --padding-start: 0px;
+        --padding-end:0px;
+        --inner-padding-end: 0px;
+        --min-height: 40px;
+        ion-checkbox {
+            margin: 0px 15px 0px 0px;
+            height: 20px;
+            width: 20px;
+            --border-radius: 4px;
+            --checkmark-width: 2px;
         }
     }
 }

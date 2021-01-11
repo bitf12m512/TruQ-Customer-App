@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Payment Confirmation</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="mainCont">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size=11>
+        <div class="transDespCont">
+          <h3 class="mt-0 bold">Do you Confirm it?</h3>
+          <h5 class="transDesp">An Amount <span class="bold primary">$ 60</span> to be deducted from your card <span
+              class="bold primary"> ****
+              **** **** 6663. </span></h5>
+        </div>
+        <div class="iconCont">
+          <img src="/assets/imgs/masterCard.svg">
+          <p>Change Card</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <ion-button routerLink="/your-trip-summary" routerDirection="back" fill="outline" color="primary" class="loginBtn" expand="block">Cancel
+        </ion-button>
+        <ion-button routerLink="/trip-success" color="primary" class="loginBtn mt-1" expand="block">Confirm
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

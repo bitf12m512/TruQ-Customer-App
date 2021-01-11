@@ -1,5 +1,7 @@
 {
   "name": "truQ-customer",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Payments',
-      url: '/home',
+      url: '/payment-wallet',
       icon: 'card'
     },
     {
@@ -39,12 +39,12 @@ export class AppComponent implements OnInit {
     },
     {
       title: 'Referrals',
-      url: '/home',
+      url: '/referral',
       icon: 'gift'
     },
     {
       title: 'About',
-      url: '/home',
+      url: '/about-us',
       icon: 'information-circle'
     },
   ];
@@ -61,6 +61,7 @@ export class AppComponent implements OnInit {
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
+      this.statusBar.backgroundColorByHexString("#FFFFFF");
       this.splashScreen.hide();
     });
   }

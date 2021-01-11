@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Add New Card</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="11">
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Full Name</ion-label>
+        <ion-input type="text" placeholder="Jane Osborne"></ion-input>
+      </ion-item>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Card Number</ion-label>
+        <ion-input type="text" placeholder="5541 2412 15214 2151"></ion-input>
+        <img src="/assets/imgs/masterCard2.svg" slot="end" class="masterCard">
+      </ion-item>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">Expiry Date</ion-label>
+        <ion-datetime displayFormat="MM/YY" placeholder="05/23"></ion-datetime>
+      </ion-item>
+      <ion-item mode="md" lines="full" class="inpuCont">
+        <ion-label position="stacked">CVV</ion-label>
+        <ion-input type="number" placeholder="6666"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="11">
+        <ion-button color="primary" class="loginBtn" expand="block">Add Card</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

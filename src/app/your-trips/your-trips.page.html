@@ -40,6 +40,10 @@
             <img src="/assets/imgs/Car.svg" class="carImg">
             <p class="font-15">Mini Van</p>
           </div>
+          <div class="dateCont">
+            <p class="font-15">Shared Trip</p>
+          </div>
+          <p (click)="showModal=true" class="inviteTxt">Invite People?</p>
           <ion-button color="primary" fill="outline" class="loginBtn" expand="block">Cancel</ion-button>
           <ion-button color="primary" class="loginBtn" expand="block">Qoutes</ion-button>
           <p class="tripID">Trip ID: 5241D541A</p>
@@ -61,6 +65,10 @@
             <img src="/assets/imgs/Car.svg" class="carImg">
             <p class="font-15">Mini Van</p>
           </div>
+          <div class="dateCont">
+            <p class="font-15">Shared Trip</p>
+          </div>
+          <p (click)="showModal=true" class="inviteTxt">Invite People?</p>
           <ion-button color="primary" fill="outline" class="loginBtn" expand="block">Cancel</ion-button>
           <ion-button color="primary" class="loginBtn" expand="block">Qoutes</ion-button>
           <p class="tripID">Trip ID: 5241D541A</p>
@@ -80,6 +88,9 @@
           <div class="dateCont">
             <p class="font-15">Tue, 24 sep at PM-4:OO PM</p>
           </div>
+          <div class="dateCont">
+            <p class="font-15">Express Trip</p>
+          </div>
           <ion-button routerLink="/trip-detail" color="primary" fill="outline" class="loginBtn" expand="block">Trip Details</ion-button>
           <ion-button routerLink="/rating" color="primary" class="loginBtn" expand="block">Rate Driver</ion-button>
         </div>
@@ -96,6 +107,9 @@
           <div class="dateCont">
             <p class="font-15">Tue, 24 sep at PM-4:OO PM</p>
           </div>
+          <div class="dateCont">
+            <p class="font-15">Shared Trip</p>
+          </div>
           <ion-button routerLink="/trip-detail" color="primary" fill="outline" class="loginBtn" expand="block">Trip Details</ion-button>
           <ion-button routerLink="/rating" color="primary" class="loginBtn" expand="block">Rate Driver</ion-button>
         </div>
@@ -103,3 +117,15 @@
     </ion-col>
   </ion-row>
 </ion-content>
+
+<div *ngIf="showModal" class="popupModal">
+  <div class="innerDiv">
+    <h2 class="mt-0 bold mb-1">Invite People</h2>
+    <h5>Send a Invitation to<br /> share a trip</h5>
+    <ion-item lines="none" class="inputCont mt-2">
+      <ion-input type="tel" placeholder="+27 72 272 7272"></ion-input>
+    </ion-item>
+    <ion-button (click)="showModal=false;" color="primary" class="loginBtn" expand="block">send Invitation
+    </ion-button>
+  </div>
+</div>

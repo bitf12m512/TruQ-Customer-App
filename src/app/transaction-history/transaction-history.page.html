@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Transaction History</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button auto-hide="false">
+        <img src="/assets/imgs/menuIcon.svg">
+      </ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item lines="full" class="balanceCont">
+    <p slot="start">Current Balance</p>
+    <p slot="end" class="bold font-17">$ 351.21</p>
+  </ion-item>
+  <ion-item lines="none" class="transactionCont">
+    <ion-label class="ion-text-wrap">
+      <p class="font-15">4 hour ago</p>
+      <p class="font-15">Trip Payment to Jamison</p>
+    </ion-label>
+    <p class="amount" slot="end">- $ 51.21</p>
+  </ion-item>
+  <ion-item lines="none" class="transactionCont bgColored">
+    <ion-label class="ion-text-wrap">
+      <p class="font-15">8 Hours ago</p>
+      <p class="font-15">Trip Payment to Hannah Baker</p>
+    </ion-label>
+    <p class="amount" slot="end">- $ 251.71</p>
+  </ion-item>
+  <ion-item lines="none" class="transactionCont">
+    <ion-label class="ion-text-wrap">
+      <p class="font-15">Yesterday</p>
+      <p class="font-15">Wallet Recharge with the Visa Card</p>
+    </ion-label>
+    <p class="amount" slot="end">+ $ 2251.01</p>
+  </ion-item>
+  <ion-item lines="none" class="transactionCont bgColored">
+    <ion-label class="ion-text-wrap">
+      <p class="font-15">5 days ago</p>
+      <p class="font-15">Trip Payment to Hannah Baker</p>
+    </ion-label>
+    <p class="amount" slot="end">- $ 251.71</p>
+  </ion-item>
+  <ion-item lines="none" class="transactionCont">
+    <ion-label class="ion-text-wrap">
+      <p class="font-15">Last Month</p>
+      <p class="font-15">Wallet Recharge with the Visa Card</p>
+    </ion-label>
+    <p class="amount" slot="end">+ $ 2251.01</p>
+  </ion-item>
+</ion-content>

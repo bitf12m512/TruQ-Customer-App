@@ -1,0 +1,41 @@
+ion-content
+{
+    --padding-top: 1em;
+    .inpuCont
+    {
+        --padding-start: 0px;
+        --padding-end: 0px;
+        --inner-padding-end: 0px;
+        --border-color: #DEE2E5;
+        --min-height: 55px;
+        margin-top: 15px;
+        ion-label
+        {
+            margin-bottom: 3px;
+        }
+        ion-input
+        {
+            --color: var(--ion-color-secondary);
+            font-size: 14px;
+            --placeholder-opacity: 1;
+            --padding-start: 0px;
+            --padding-end: 0px;
+            --padding-top: 10px;
+            --padding-bottom: 10px;
+        }
+        ion-datetime {
+            font-size: 14px;
+            --color: var(--ion-color-secondary);
+            --placeholder-opacity: 1;
+            --padding-end: 0px;
+            --padding-top: 10px;
+            --padding-bottom: 10px;
+        }
+
+        .masterCard {
+            height: 25px;
+            align-self: flex-end;
+            margin: 0px 0px 12px 10px;
+        }
+    }
+}
