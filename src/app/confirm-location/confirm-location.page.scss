@@ -50,8 +50,12 @@ ion-content {
                     border-left: 1px solid #E4E9F2;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: flex-end;
                     text-align: center;
+                    ion-icon
+                    {
+                        font-size: 25px;
+                    }
                 }
             }
         }

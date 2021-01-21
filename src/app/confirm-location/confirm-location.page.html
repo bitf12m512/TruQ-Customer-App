@@ -16,7 +16,10 @@
   <ion-row class="ion-justify-content-center">
     <ion-col size="11">
       <ion-item lines="none" class="inputCont">
-        <ion-datetime displayFormat="DD MMM hh:mm A" placeholder="Tue, 24 sep at PM-4:OO PM"></ion-datetime>
+        <ion-datetime displayFormat="DD-MMM-YYYY" placeholder="24-sep-2020"></ion-datetime>
+      </ion-item>
+      <ion-item lines="none" class="inputCont mt-1">
+        <ion-datetime displayFormat="hh:mm A" placeholder="4:OO PM"></ion-datetime>
       </ion-item>
       <div class="locationsCont">
         <div class="pinCont">
@@ -29,7 +32,7 @@
           <ion-item lines="none" class="inputCont">
             <ion-input type="text" clearInput placeholder="where to?"></ion-input>
             <div class="addBtnCont" slot="end">
-              <ion-icon name="add"></ion-icon>
+              <ion-icon name="add-circle"></ion-icon>
             </div>
           </ion-item>
         </div>
