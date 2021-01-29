@@ -45,16 +45,17 @@ ion-content {
             .inputCont {
                 .addBtnCont {
                     margin: 0px 0px 0px 5px;
-                    height: 20px;
+                    height: 22px;
                     width: 40px;
+                    min-width: 40px;
                     border-left: 1px solid #E4E9F2;
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
                     text-align: center;
-                    ion-icon
-                    {
-                        font-size: 25px;
+
+                    ion-icon {
+                        font-size: 24px;
                     }
                 }
             }

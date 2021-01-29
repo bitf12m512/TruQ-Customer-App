@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./confirm-location.page.scss'],
 })
 export class ConfirmLocationPage implements OnInit {
-
-  constructor() { }
+  public minDate;
+  constructor() {
+   this.minDate = new Date().getFullYear();
+   }
 
   ngOnInit() {
   }

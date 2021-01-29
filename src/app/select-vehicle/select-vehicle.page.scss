@@ -80,16 +80,10 @@ ion-content {
                 --border-radius: 6px;
                 margin-top: 10px;
 
-                ion-input {
-                    --padding-end: 0px;
-                    font-size: 14px;
-                    --placeholder-opacity: 0.8;
-                    --color: var(--ion-color-secondary);
-                }
-                .carIcon
-                {
+                .carIcon {
                     margin: 0px 10px 0px 0px;
                 }
+
                 ion-select {
                     --color: var(--ion-color-secondary);
                     font-size: 14px;
@@ -116,4 +110,53 @@ ion-content {
         }
     }
 
+}
+
+.popupModal {
+
+    .innerDiv {
+        padding: 25px 0px 15px 0px;
+        color: var(--ion-color-secondary);
+
+        .modalBody {
+            height: 45vh;
+            overflow-y: scroll;
+            padding: 0px 13px 15px 13px;
+        }
+
+        .radioCont {
+            --padding-start: 16px;
+            --padding-end: 16px;
+            --inner-padding-end: 0px;
+            --min-height: 80px;
+            box-shadow: 1px 1px 16px 0px rgb(169 162 161 / 14%);
+            border-radius: 8px;
+            --border-radius: 8px;
+            margin-top: 15px;
+
+            ion-radio {
+                margin: 0px 0px 0px 15px;
+            }
+
+            .vehicleIcon {
+                margin: 0px 10px 0px 0px;
+                height: 20px;
+                width: 58px;
+                object-fit: cover;
+            }
+
+            ion-label {
+                margin: 0px;
+                font-size: 13px;
+                --color: var(--ion-color-secondary);
+            }
+        }
+
+        .loginBtn {
+            height: 50px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-size: 13px;
+        }
+    }
 }

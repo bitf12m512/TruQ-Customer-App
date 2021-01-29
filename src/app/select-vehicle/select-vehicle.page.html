@@ -37,30 +37,86 @@
 
   <div class="btmContainer">
     <div class="selectCard">
-      <ion-item lines="none" class="inputCont">
+      <ion-item (click)="vehicleModal=true" lines="none" class="inputCont">
         <img src="/assets/imgs/Car.svg" class="carIcon" slot="start">
-        <ion-select value="opt3">
+        <!-- <ion-select value="opt3">
           <ion-select-option value="opt1">Mini Van ( Recommended)</ion-select-option>
           <ion-select-option value="opt2">Pick-up</ion-select-option>
           <ion-select-option value="opt3">Van</ion-select-option>
           <ion-select-option value="opt4">Truck</ion-select-option>
-        </ion-select>
+        </ion-select> -->
+        <p class="font-14">{{selectVehicle}}</p>
         <ion-icon slot="end" class="downArrow" name="chevron-down"></ion-icon>
       </ion-item>
-      <ion-item lines="none" class="inputCont">
-        <!-- <img src="/assets/imgs/Car.svg" class="carIcon" slot="start"> -->
-        <ion-select value="opt1">
+      <ion-item (click)="vehicleSubCateModal=true" lines="none" class="inputCont">
+        <img src="/assets/imgs/vehicleIcon1.png" height="15px" class="carIcon" slot="start">
+        <!-- <ion-select value="opt1">
           <ion-select-option value="opt1">Small Van</ion-select-option>
           <ion-select-option value="opt2">Medium Van</ion-select-option>
           <ion-select-option value="opt3">Extra Big Van</ion-select-option>
           <ion-select-option value="opt4">5 ton</ion-select-option>
           <ion-select-option value="opt5">7 ton</ion-select-option>
           <ion-select-option value="opt6">10 ton</ion-select-option>
-        </ion-select>
+        </ion-select> -->
+        <p class="font-14">{{selectedSubVehicle}}</p>
         <ion-icon slot="end" class="downArrow" name="chevron-down"></ion-icon>
       </ion-item>
-      <ion-button routerLink="/your-trip-summary" color="primary" class="loginBtn mt-1"
-        expand="block">Trip Summary</ion-button>
+      <ion-button routerLink="/your-trip-summary" color="primary" class="loginBtn mt-1" expand="block">Trip Summary
+      </ion-button>
     </div>
   </div>
 </ion-content>
+
+<div *ngIf="vehicleModal" class="popupModal">
+  <div class="innerDiv">
+    <h4 class="my-0 bold pb-1">Vehicle Category</h4>
+    <div class="modalBody">
+      <ion-radio-group [(ngModel)]="selectVehicle">
+        <ion-item *ngFor="let vehicle of vehicleCate;" mode="md" class="radioCont" lines="none">
+          <img [src]="vehicle.Img" class="vehicleIcon">
+          <ion-label>{{vehicle.name}}</ion-label>
+          <ion-radio mode="md" color="primary" [value]="vehicle.name" slot="end"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </div>
+    <ion-row style="padding: 0px 13px;">
+      <ion-col size="6" class="pl-0">
+        <ion-button (click)="vehicleModal=false;" color="primary" fill="outline" class="loginBtn" expand="block">
+          Cancel
+        </ion-button>
+      </ion-col>
+      <ion-col size="6" class="pr-0">
+        <ion-button (click)="vehicleModal=false;" color="primary" class="loginBtn" expand="block">
+          Confirm
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>
+
+<div *ngIf="vehicleSubCateModal" class="popupModal">
+  <div class="innerDiv">
+    <h4 class="my-0 bold pb-1">Vehicle Sub Category</h4>
+    <div class="modalBody">
+      <ion-radio-group [(ngModel)]="selectedSubVehicle">
+        <ion-item *ngFor="let vehicle of vehicleSubCate;" mode="md" class="radioCont" lines="none">
+          <img [src]="vehicle.Img" class="vehicleIcon">
+          <ion-label>{{vehicle.name}}</ion-label>
+          <ion-radio mode="md" color="primary" [value]="vehicle.name" slot="end"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </div>
+    <ion-row style="padding: 0px 13px;">
+      <ion-col size="6" class="pl-0">
+        <ion-button (click)="vehicleSubCateModal=false;" color="primary" fill="outline" class="loginBtn" expand="block">
+          Cancel
+        </ion-button>
+      </ion-col>
+      <ion-col size="6" class="pr-0">
+        <ion-button (click)="vehicleSubCateModal=false;" color="primary" class="loginBtn" expand="block">
+          Confirm
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

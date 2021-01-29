@@ -49,3 +49,23 @@
     </div>
   </div>
 </ion-content>
+
+<div *ngIf="showModal" class="popupModal">
+  <div class="innerDiv">
+    <h2 class="despMsg">Could your pickup and drop off
+      address have storeys (floors)?</h2>
+    <ion-row>
+      <ion-col size="6" class="pl-0">
+        <ion-button (click)="showModal=false;" routerLink="/item-list" color="primary" fill="outline" class="loginBtn" expand="block">
+          No
+        </ion-button>
+      </ion-col>
+      <ion-col size="6" class="pr-0">
+        <ion-button (click)="showModal=false;" routerLink="/house-floors" color="primary" class="loginBtn"
+          expand="block">
+          Yes
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

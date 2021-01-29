@@ -8,12 +8,12 @@ import { Router } from '@angular/router';
 export class SelectTripTypePage implements OnInit {
   public tripType: string = 'express';
   constructor(public router: Router) { }
-
+  public showModal : boolean = false;
   ngOnInit() {
   }
   selectedTrip() {
     if (this.tripType == 'express' || this.tripType == 'houseMove') {
-      this.router.navigate(['/item-list']);
+      this.showModal = true;
     }
     else {
       this.router.navigate(['/shared-trips']);

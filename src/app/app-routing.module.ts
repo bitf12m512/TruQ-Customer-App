@@ -123,6 +123,10 @@ const routes: Routes = [
   {
     path: 'payment-confirmation',
     loadChildren: () => import('./payment-confirmation/payment-confirmation.module').then( m => m.PaymentConfirmationPageModule)
+  },
+  {
+    path: 'house-floors',
+    loadChildren: () => import('./house-floors/house-floors.module').then( m => m.HouseFloorsPageModule)
   }
 ];
 

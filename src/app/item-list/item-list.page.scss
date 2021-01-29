@@ -97,7 +97,7 @@ ion-content {
                 }
                 .hrLine2
                 {
-                    height: 20px;
+                    height: 25px;
                     width: 1px;
                     background-color: #E4E9F2;
                 }
@@ -108,13 +108,18 @@ ion-content {
                 }
                 .addBtnCont {
                     margin: 0px 0px 0px 10px;
-                    height: 20px;
-                    width: 30px;
+                    height: 25px;
+                    width: 40px;
+                    min-width: 40px;
                     border-left: 1px solid #E4E9F2;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     text-align: center;
+                    ion-icon
+                    {
+                        font-size: 24px;
+                    }
                 }
 
                 &.detailItem {

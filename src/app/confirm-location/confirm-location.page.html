@@ -15,12 +15,6 @@
 <ion-content>
   <ion-row class="ion-justify-content-center">
     <ion-col size="11">
-      <ion-item lines="none" class="inputCont">
-        <ion-datetime displayFormat="DD-MMM-YYYY" placeholder="24-sep-2020"></ion-datetime>
-      </ion-item>
-      <ion-item lines="none" class="inputCont mt-1">
-        <ion-datetime displayFormat="hh:mm A" placeholder="4:OO PM"></ion-datetime>
-      </ion-item>
       <div class="locationsCont">
         <div class="pinCont">
           <img src="/assets/imgs/Route.svg">
@@ -37,6 +31,12 @@
           </ion-item>
         </div>
       </div>
+      <ion-item lines="none" class="inputCont">
+        <ion-datetime [min]="minDate" displayFormat="DD-MMM-YYYY" placeholder="24-sep-2020"></ion-datetime>
+      </ion-item>
+      <ion-item lines="none" class="inputCont mt-1">
+        <ion-datetime displayFormat="hh:mm A" placeholder="4:OO PM"></ion-datetime>
+      </ion-item>
       <ion-item class="savedLocation" lines="full">
         <ion-button color="primary" slot="start" class="ion-no-padding actBtn">
           <ion-icon name="home"></ion-icon>
